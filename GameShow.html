@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="GameShowDesign.css">
+    <title>Game Show!</title>
+</head>
+<body>
+    <div class="game-container">
+
+        <div class = "divQuestion">
+            <h3 id = "Question">Question</h3>
+            <p id = "scoreMessage">Your score is:</p>
+            <p id = "score">$0</p>
+        </div>
+        <div class = "Choices">
+            <input type="radio" id = "choice1" name = "choice1" value = "choice1">
+            <label for="choice1" id = "choiceLabel1">Choice 1</label>
+            <br>
+            
+            <input type="radio" id = "choice2" name = "choice1" value = "choice2">
+            <label for="choice2" id = "choiceLabel2">Choice 2</label>
+            <br>
+            
+            <input type="radio" id = "choice3" name = "choice1" value = "choice3">
+        <label for="choice3" id = "choiceLabel3">Choice 3</label>
+        <br>
+        
+        <input type="radio" id = "choice4" name = "choice1" value = "choice4">
+        <label for="choice4" id = "choiceLabel4">Choice 4</label>
+        <br>
+        <br>
+        <button onclick = "submit()">Submit Answer</button>
+        <button onclick="reset()" id = "restartButton" style="display: none">Reset</button>
+        <div class = "Lifelines">
+            <h4>Lifelines:</h4>
+            <button id = "lifeline1" onclick="fiftyFifty(this)"><img src="fifty.jpg" style="height: 90px;" alt=""></button>
+            <button id = "lifeline2" onclick="phoneFriend(this)"><img src="paf.jpg" style="height: 90px;" alt=""></button>
+            <button id = "lifeline3" onclick="audienceHelp(this)"><img src="ata.jpg" style="height: 90px;" alt=""></button>
+        </div>
+        
+        <script src="GameShowScript.js"></script>
+    </div>
+    </body>
+    </html>

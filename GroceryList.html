@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="GroceryListDesign.css" />
+    
+    <title>Grocery List Manager</title>
+  </head>
+  <body>
+    <h1>Grocery List Manager</h1>
+    <button onclick="showEverything()">View All Items</button>
+    <button onclick="showListPurchased()">View Purchased Items</button>
+    <button onclick="showListToPurchase()">View Remaining Items</button>
+
+    <div id="displayList"></div>
+
+    <div class="appendGrocer">
+      <label for="inputItems">Input your items here!</label>
+      <input type="text" id="addBox" name="addBox" />
+      <button onclick="groceryAdd()">Enter</button>
+    </div>
+
+    <script src="GroceryList.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+body{
+    background-image: url("triangleWallpaper.jpg");
+}
+
+.game-container{
+    height: 400pt;
+    color:rgb(138, 98, 171);
+    text-shadow: 2px 2px hsl(165, 41%, 52%);
+    margin: 50px;
+    background-color: rgb(209, 168, 168);
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.Lifelines{
+    padding: 100px;
+        
+}
